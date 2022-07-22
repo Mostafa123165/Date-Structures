@@ -42,3 +42,43 @@ int main() {
     for(int i =0 ; i<heap.size() ;i++)cout<<heap[i]<<" ";
     cout<<'\n' ;
 }
+
+/*
+ * ## content  :
+ * 1-what is Heap ?
+ * How Heaps Work ?
+ * Heap Sort ?
+ *
+ * --------
+ *
+ * ## What is Heap ?
+ *
+ * -Heap is Date Structure We can View Binary Tree ( Complete Binary Tree , Full Binary Tree ),
+ * -Each node in Binary Tree is Correspond to the Element in My Array ,
+ * -Complete Binary Tree is Binary Tree is completely with elements except last level .
+ * -Full Binary Tree is Binary Tree is completely with elements and last level .
+ * -heap View by MaxHeap Or MinHeap , (MaxHeap Each Parent is greater than all child ) and MinHeap is Inverse MaxHeap
+ * - is Emplace (This is mean do not need adding memory to doing operation (inverse merge Sort need  adding memory )).
+ *
+ * --------
+ *
+ * How Heaps Work ?
+ * - In the first I have tow heap (max heap, min heap) ,
+ * - How Max Heap work ? Compare Parent with Child if anyone child is greater than Parent I swap( parent , max between two child ) ,
+ * - then do Recursive on same node (same node this mean max(parent , two child)).
+ * - if Parent is Greater Tow Child I do return(stop).
+ * - Time Complexity is O(lg n).a
+ * - How Max Heap work ? Reverse Max Heap .
+ *
+ * --------
+ * Heap Sort ? // Time O(n lgn)
+ * - The Heapsort Algorithm start By Build_Heap So convert un order array to Max_Heap ,
+ * - after this I have Max_Heap_Array and Max Element is Top Tree (A[0])
+ *  Doing Operation ?
+ *    // Repeat (1,2,3) on A.length() To 1
+ *  1 : exchanging A[0] with a[n] (n number elements in array ). // a[n] is max element in Tree
+ *  2 : n-=1 ( A.length() - 1 ) . // because i cut last element From Tree
+ *  3 : we need do Max Heapify on 0 (0 Top Array )  ?  making  Max_Heap_Array .
+ *
+ *
+*/
