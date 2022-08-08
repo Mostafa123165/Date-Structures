@@ -39,7 +39,7 @@ bool dfs(int node , int per){
     
     else if(time_node[node] > time_node[child] && vis[child]) {
         cycle_start = child ;
-        cycle_end = no4de ;
+        cycle_end = node ;
         return true ;
     }
 }
